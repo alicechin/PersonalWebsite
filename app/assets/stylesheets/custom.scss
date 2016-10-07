@@ -1,28 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* universal */
-$light-gray: #777;
 
-body {
-  padding-top: 60px;
-}
-
-section {
-  overflow: auto;
-} 
-
-textarea {
-  resize: vertical;
-}
-
-.center {
-  text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
-} 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,19 +16,16 @@ h1 {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
-section {
-  overflow: auto;
-} 
 
 
 #logo {
   float: left;
   margin-right: 10px;
-  font-family: 'Droid Serif';
-  font-size: 2.5em;
+  font-family:'Playfair Display', serif;
+  font-size: 2em;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;

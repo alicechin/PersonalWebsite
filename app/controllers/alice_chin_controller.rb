@@ -5,6 +5,6 @@ class AliceChinController < ApplicationController
   def about
   end
 
-  def contact
+  def resume
   end
 end

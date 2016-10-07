@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get '/about', to: 'alice_chin#about'
 
-  get '/contact', to: 'alice_chin#contact'
+  get '/resume', to: 'alice_chin#resume'
 
   # get '/about',to: 'alice_chin#about'
 

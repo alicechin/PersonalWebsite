@@ -1,26 +1,47 @@
 <!DOCTYPE html>
-<html style = "height: 100%;">
+<!-- <html style = "height: 100%;"> -->
+<html>
+
 <body style ="background: linear-gradient(to bottom right, #AFEEEE, #F4A460);
-	height: 100%;
     margin: 0;
     background-repeat: no-repeat;
-    background-attachment: fixed;">
+    background-attachment: fixed;" >
+
 <head>
   <title>Welcome</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Pacifico|Playfair+Display|Vollkorn" rel="stylesheet">
+
+    <style>
+      h1 {
+        font-family: 'Vollkorn', serif;
+        font-size: 48px;
+      }
+      h2 {
+        font-family: 'Vollkorn', serif;
+        font-size: 48px;
+      }
+      p {
+        font-family: 'Arima Madurai', cursive;
+        font-size: 25px;
+      }
+    </style>
+
 </head>
-<body>
+<div class="container" style ="background: white;">
+
 
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <%= link_to "Alice Chin", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-     	<li><%= link_to "Home",   root_path %></li>
+     	  <li><%= link_to "Home",   root_path %></li>
         <li><%= link_to "About",   about_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>
+        <li><%= link_to "Resume", resume_path %></li>
       </ul>
     </nav>
   </div>
@@ -28,10 +49,8 @@
 
 <!-- Add Footer -->
 <!-- Links are in footer layout -->
-	<div class="container">
-	  <%= yield %>
-	  <%= render 'layouts/footer' %>
-	 </div>
+    <%= yield %>
 </body>
-
+<%= render 'layouts/footer' %>
+</div>
 </html>
