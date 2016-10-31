@@ -9,6 +9,7 @@ gem 'bootstrap-sass', '3.3.6'
 group :development, :test do
   gem 'sqlite3'
 end
+gem 'anjlab-bootstrap-rails', '~> 3.0.0.3', :require => 'bootstrap-rails'
 group :production do
   gem 'pg'
 end
